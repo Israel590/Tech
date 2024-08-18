@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificaciones del Robot </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="css/estilo1.css" rel="stylesheet">
+   
+     <!--Iconos-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+     <link rel="icon" href="img/Expo_logo.png">
+
+    <style>
+        
+       
+        .card-header{
+            background:  radial-gradient(circle at 0% 0%, #c44578 0, #bc3b7c 10%, #b13181 20%, #a42786 30%, #951e8b 40%, #81168f 50%, #691394 60%, #4b1798 70%, #111c9d 80%, #0022a1 90%, #0026a4 100%);
+            color: #fff;
+        }
+
+        .card{
+            height: 450px;
+            width: 1100px;
+        }
+
+     .card-title, .table, .card-text{
+            margin-left: -110px;
+            width: 450px;
+            margin-top: -20px;
+            font-size: 20px;
+        }
+
+        .table{
+height: 240px;        }
+
+        .card-text{
+            text-align: justify;
+        }
+
+        .card-title{
+           
+            margin-top: -10px;
+            margin-left: -100px;
+            margin-bottom: -35px;
+            text-align: center;
+        }
+
+        
+        
+        .imagenes{
+            margin-top: -15px;
+            margin-left: -30px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .titulo{
+        display: flex;
+        font-family: helvetica;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        
+ }
+
+
+ .contenedor{
+    padding-left: 190px;
+    position: relative;
+    width: 1150px;
+   
+    display: flex;
+    
+    align-items: justify;
+    flex-wrap: wrap;
+    padding-top: 120px;
+    
+}
+
+.contenedor .card{
+  
+    position: relative;
+    max-width: 300px;
+    height: 220px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+    padding-top: 100px;
+}
+
+.contenedor .card:hover{
+    height: 540px;
+}
+
+.contenedor .card .image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+   margin-top: -140px;
+    left: 30px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor .card .image img{
+    margin-top: 0;
+    max-width: 100%;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.contenedor .card .content{
+    position: relative;
+    margin-top: -180px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.contenedor .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 5px;
+    transition-delay: 0.3s;
+}
+
+.content h1{
+    font-size: 30px;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+/*Parte de Julissa*/
+.Imagen1 {
+    margin-top: -30px;
+    width: 700px; 
+    height: 800px; 
+    object-fit: cover; 
+    
+}
+.row1 {
+    font-size: 25px;
+    margin-top: -30px;
+    margin-left: 95px;
+    width: 100%;
+    max-width: 1220px;
+    max-height: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    overflow-x: hidden;
+    padding: 5rem 0;
+}
+
+.row1 .imgWrapper {
+    overflow: hidden;
+}
+
+.row1 .imgWrapper .Imagen1 {
+    width: 900px;
+    height: 100%;
+    margin-left: -200px;
+    transition: 0.3s;
+}
+
+.row1 .imgWrapper:hover .Imagen1 {
+    transform: scale(1.25);
+}
+
+.row1 .contentWrapper {
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 140px;
+}
+
+
+.row1 p{
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial;
+}
+
+.textWrapper li{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row1 .contentWrapper span.textWrapper {
+    font-size: 20px ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.row1 .contentWrapper span.textWrapper span {
+    display: inline-block;
+    background: #383f47;
+    width: 10px;
+    height: 15px;
+}
+
+.row1 .contentWrapper h2 {
+    font-size: 40px;
+    font-family: Arial;
+
+    color: #383f47;
+    padding-bottom: 20px;
+}
+.row1 .contentWrapper p{
+    font-size: 20px;
+    line-height: 25px;
+    padding-bottom: 25px;
+}
+ol.reverse-list {
+    counter-reset: item;
+    list-style-type: none; 
+    padding: 0; 
+}
+
+ol.reverse-list li {
+    counter-increment: item; 
+    margin: 0 0 10px 20px; 
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+ol.reverse-list li::before {
+    content: counter(item, decimal) ". "; 
+    font-weight: bold; 
+    margin-right: 5px; 
+}
+
+.row2{
+    width: 1000px;
+}
+
+.row1 .contentWrapper a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #fff;
+    padding: 15px 40px;
+    letter-spacing: 1px;
+    user-select: none;
+ }
+
+ .titulo{
+    
+    margin-bottom: 25px;
+    height: 200px;
+ }
+
+ .titulo1{
+        display: flex;
+        font-family: helvetica;
+        justify-content: center;
+        text-align: center;
+        font-size: 40px;
+        
+ }
+    
+@media (max-width: 767.98px){
+    .contenedor {
+        display: inline-block;
+        position: relative;
+        align-items: center;
+    }
+    .row1{
+        margin-left: -10px;
+    }
+ 
+
+    .contentWrapper {
+        margin-left: -20px; 
+    }
+}
+
+
+@media (max-width: 991.98px){
+    .contenedor {
+        display: inline-block;
+        position: relative;
+       
+    }
+
+    .imagenes{
+        width: 200px;
+        height: 300px;
+        margin-top: -5px;
+    }
+
+    .card-title{
+        margin-top: 30px;
+        
+    }
+
+}
+
+/*ola*/
+.hero {
+    overflow: hidden;
+}
+
+.heading h1 {
+    color: purple;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+        width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 500px;
+    margin: 0 25px;
+    animation: fadeInUp 2s ease;
+    
+}
+
+.hero-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.hero-content p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: black;
+}
+.hero-image {
+    flex: 1;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+.hero-image1{
+    justify-content: left;
+}
+
+.Image {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+section {
+    margin-left: -40px;
+    position: relative;
+    width: 1400px;
+    height: 100vh;
+    /*background: rgba(210, 185, 255, 0.795);*/
+    overflow: hidden;
+    margin-top: -10px;
+}
+section .wave {
+    border-radius: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 10;
+    width: 100%;
+    height: 100px;
+    background: url();
+    background-size: 1000px 100px;
+    bottom: 20;
+}
+
+section .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 100;
+    opacity: 1;
+    animation-delay: 0s;
+    
+}
+
+section .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+section .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+section .wave.wave4 {
+    animation: animate2 15s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.Imagen{
+    margin-left: -340px;
+    width: 500px;
+}
+
+.Texto{
+   margin-left: 250px;
+    width: 500px;
+    height: 900px;
+    margin-top: -380px;
+}
+
+p{
+    text-align: justify;
+
+}
+
+.Device1{
+    background-color: white;
+}
+
+.ola{
+    border-radius: 0%;
+    z-index: 100;
+    margin-top: -20px;
+    height: 150px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .heading h1 {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero {
+        padding: 8px;
+    }
+    .container {
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 40px;
+    }
+    .hero-content {
+        width: 100%;
+        margin: 35px 0;
+    }
+    .hero-content h2 {
+        font-size: 30px;
+    }
+    .hero-content p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .hero-image {
+        width: 100%;
+        
+    }
+}
+
+ 
+
+    </style>
+   <!--Menú flotante-->
+ <header>
+    <a href="#" class="logo"> <img src="img/logo.png" class="logo"></a></div>
+    <nav>
+         <li> <a href="index.html">Inicio</a></li>
+         <li><a href="EntreNosotros.html">Sobre Nosotros</a></li>
+         <li><a href="Especificaciones.html">Nuestro Robot</a></li>
+          <li><a href="Login.html">Contáctanos</a></li>          
+     </ul>
+     
+     <a href="Especificaciones2.html" > EN <!--<img src="img/banderaUS.png" class="bandera" >--></a></div>
+ </nav> 
+ </header>
+
+    <br><br><br><br>
+    <section class="hero">
+
+<div class="row1">
+    <div class="imgWrapper">
+        <div class="hero-content">
+        <img class= "Imagen1"src="img/carrusel1.jpeg" alt="">
+        </div>
+    </div>
+    <div class="contentWrapper">
+        <div class="content">
+            <div class="hero-content">
+            <br>
+            <p>Nuestro seguidor de línea es un dispositivo que sigue un camino. 
+
+                Aunque estos robots suelen utilizarse en diferentes entornos también tienen aplicaciones prácticas en el mundo real.
+                 </p>
+                  <ol class="reverse-list">
+                    <li> Movilizar objetos a ciertos lugares.</li>
+                    <li> Apoyo para personas con problemas o discapacidad visual.</li>
+                    <li> Colaborar en restaurantes con el servicio para atender a los clientes.</li>
+                    <li> Llevar documentos o archivos en oficinas.</li>
+    
+                </ol>
+                <br>
+                <a href="https://www.fischertechnik.de/en/products/schools/stem-robotics/559888-robotics-txt-4-0-base-set">Seguidor de linea </a> 
+            </div>
+        </div>
+        </div>
+    </div>
+ </div>
+        </div>
+    </section>
+
+     <br><br>
+     
+     <div class="title">
+        <hr>
+    <h1 class="titulo1" style="color: #0d3166">Características de nuestro Robot </h1>
+<hr>
+</div>
+    
+
+    <div class="container mt-5" >
+        <div class="card">
+           
+            <div class="card-header" style="font-size: 20px; text-align: center;">
+                Especificaciones del Robot Seguidor de Líneas
+            </div>
+            <div class="card-body" style="height: 700px;">
+                <div class="row1">
+                    
+                    <div class="col-md-4">
+                        <img class="imagenes" src="img/robot_especificaciones.jpeg" class="img-fluid" alt="Robot Seguidor de Líneas">
+                    </div>
+                    
+                    <div class="col-md-8">
+                        <h5 class="card-title" style="margin-left: -150px; " target="_blank" >Seguidor de Líneas</h5>
+                        <br><br>
+                        <!--<p class="card-text">Este robot está diseñado para seguir líneas en el suelo utilizando sensores infrarrojos. A continuación, podrás observar detalles que caracterizan nuestro robot.</p>-->
+                        <hr style="margin-left: -110px">
+                        <table class="table">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Características</th>
+                                    <th scope="col">Especificación</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                    
+                                <tr>
+                                    <td>Batería</td>
+                                    <td>8.4 voltios</td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Velocidad </td>
+                                    <td>Programable</td>
+                                </tr>
+                                <tr>
+                                    <td>Alto</td>
+                                    <td>15 cm</td>
+                                </tr>
+                                <tr>
+                                    <td>Ancho</td>
+                                    <td>16.2 cm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+
+<hr>
+<h1 class="titulo1" style="color: #0d3166">Componentes principales de nuestro Robot </h1>
+<hr>
+
+<div class="contenedor">
+    <div class="card">
+        <div class="image">
+            <img src="img/sensor.jpeg">
+        </div>
+        <div class="content">
+            <h1>Sensores</h1>
+            <p>Ayudan al robot a detectar la línea marcada en suelo que debe seguir y a tomar decisiones. Las líneas pueden estar marcadas mediante colores, luz u otros métodos.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img src="img/camara.jpeg">
+        </div>
+        <div class="content">
+            <h1>Cámara</h1>
+            <p>Ayuda a los sensores detectando las líneas con mayor precisión, reconocimiento de patrones y colores, visión en tiempo real.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img src="img/llantas.jpeg">
+        </div>
+        <div class="content">
+            <h1>Llantas</h1>
+            <p>Ayuda al robot en el movimiento y desplazamiento en la pista que sigue. </p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img src="img/motores.jpeg">
+        </div>
+        <div class="content">
+            <h1>Motores</h1>
+            <p>Los motores proporcionan la fuerza necesaria para que el robot se mueva hacia adelante, hacia atrás y gire según sea necesario para seguir la línea de forma precisa.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+           
+            <img src="img/pantalla.jpeg">
+        </div>
+       
+        <div class="content">
+            <h1>Pantalla</h1>
+            <p>Proporciona una interfaz visual y práctica para programar y configurar las funciones del robot, como ajustes y comandos para personalizar el comportamiento del robot según sus necesidades y objetivos.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="image">
+            <img src="img/bateria.jpeg">
+        </div>
+        <div class="content">
+            <h1>Batería</h1>
+            <p>Cuenta con una pantalla que es la encargada de conectar el sevidor de el robot 
+            con el servidor de la computadora y asi poder programar el robot con las funciones
+            que nosotros creemos necesarias</p>
+        </div>
+    </div>
+   
+<div class="card">
+    <div class="image">
+        <img src="img/pagina1.jpeg">
+    </div>
+    <div class="content">
+    <h1>Patrón de colores</h1>
+    <p>Este patrón de color sirve como referencia visual para el robot. Al utilizar un sensor de color, el robot puede detectar la presencia y posición del círculo de colores a lo largo de la línea trazada.</p>
+</div>
+    </div>
+<div class="card">
+    <div class="image">
+        <img src="img/pagina2.jpeg">
+    </div>
+    <div class="content">
+    <h1>Patrón de líneas</h1>
+    <p>Un patrón con líneas sirve para desafiar y mejorar la capacidad del robot.  Al exponer al robot a una variedad de líneas con características distintas, se fomenta su adaptabilidad y robustez ante diferentes condiciones del entorno.</p>
+</div>
+</div>
+<div class="card">
+    <div class="image">
+        <img src="img/pagina3.jpeg">
+    </div>
+        <div class="content">
+    <h1>Mapa</h1>
+    <p>Este mapa con diferentes objetivos es un claro ejemplo de como el robot puede seguir rutinas planificadas de forma eficiente y precisa. El robot puede optimizar su trayectoria y asegurar que alcanza los objetivos deseados.</p>
+    </div>
+    
+</div>
+</div>
+</div>
+
+
+<br><br>
+
+
+
+
+
+<footer class="pie-pagina">
+  
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img class="LOGO" src="img/logo.png" alt="Logo de SLee Dw">
+                </a>
+            </figure>
+        </div>
+    <div class="box">
+            <h2>SOBRE NOSOTROS</h2>    
+        <p ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="30" height="30" fill="rgba(255,255,255,1)"><path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"></path></svg> technologicalrootss@gmail.com </p>
+        <br>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="30" height="30" fill="rgba(255,255,255,1)"><path d="M21 8C22.1046 8 23 8.89543 23 10V14C23 15.1046 22.1046 16 21 16H19.9381C19.446 19.9463 16.0796 23 12 23V21C15.3137 21 18 18.3137 18 15V9C18 5.68629 15.3137 3 12 3C8.68629 3 6 5.68629 6 9V16H3C1.89543 16 1 15.1046 1 14V10C1 8.89543 1.89543 8 3 8H4.06189C4.55399 4.05369 7.92038 1 12 1C16.0796 1 19.446 4.05369 19.9381 8H21ZM7.75944 15.7849L8.81958 14.0887C9.74161 14.6662 10.8318 15 12 15C13.1682 15 14.2584 14.6662 15.1804 14.0887L16.2406 15.7849C15.0112 16.5549 13.5576 17 12 17C10.4424 17 8.98882 16.5549 7.75944 15.7849Z"></path></svg> 7896-5325</p>
+        <br>
+        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26" width="30" height="30" fill="rgba(255,255,255,1)"><path d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 13C13.1046 13 14 12.1046 14 11C14 9.89543 13.1046 9 12 9C10.8954 9 10 9.89543 10 11C10 12.1046 10.8954 13 12 13Z"></path></svg> Fusalmo Soyapango, San Salvador. </p>
+    </div>
+    <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+            <a href="https://www.facebook.com/profile.php?id=61559969777479&mibextid=JRoKGi " target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="rgba(255,255,255,1)"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z" ></path> </svg> </a>
+            <a href="https://www.instagram.com/technologicalroots?utm_source=qr&igsh=d2dwb2RldzlmZDJu" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="rgba(255,255,255,1)"><path d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"></path></svg></a>
+            <a href="https://x.com/TechnoRoots2025?t=5oD0kbTk6xfgmj1qsQhjNg&s=08" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="rgba(255,255,255,1)"><path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path></svg></a>
+            <a href="https://youtube.com/@technologicalroots?si=QzV0WPRD1LGPzAW8" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50" fill="rgba(255,255,255,1)"><path d="M12.2439 4C12.778 4.00294 14.1143 4.01586 15.5341 4.07273L16.0375 4.09468C17.467 4.16236 18.8953 4.27798 19.6037 4.4755C20.5486 4.74095 21.2913 5.5155 21.5423 6.49732C21.942 8.05641 21.992 11.0994 21.9982 11.8358L21.9991 11.9884L21.9991 11.9991C21.9991 11.9991 21.9991 12.0028 21.9991 12.0099L21.9982 12.1625C21.992 12.8989 21.942 15.9419 21.5423 17.501C21.2878 18.4864 20.5451 19.261 19.6037 19.5228C18.8953 19.7203 17.467 19.8359 16.0375 19.9036L15.5341 19.9255C14.1143 19.9824 12.778 19.9953 12.2439 19.9983L12.0095 19.9991L11.9991 19.9991C11.9991 19.9991 11.9956 19.9991 11.9887 19.9991L11.7545 19.9983C10.6241 19.9921 5.89772 19.941 4.39451 19.5228C3.4496 19.2573 2.70692 18.4828 2.45587 17.501C2.0562 15.9419 2.00624 12.8989 2 12.1625V11.8358C2.00624 11.0994 2.0562 8.05641 2.45587 6.49732C2.7104 5.51186 3.45308 4.73732 4.39451 4.4755C5.89772 4.05723 10.6241 4.00622 11.7545 4H12.2439ZM9.99911 8.49914V15.4991L15.9991 11.9991L9.99911 8.49914Z"></path></svg></a>
+        </div>
+    </div>
+</div>
+<div class="grupo-2">
+    <small>&copy; 2024 <b>TECHNOLOGICAL ROOTS</b> - Todos los Derechos Reservados.</small>
+</div>
+
+
+        <script type="text/javascript">
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("abajo",window.scrollY>0);
+            })
+        </script>
+  
+</body>
+</html>
